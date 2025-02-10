@@ -72,7 +72,12 @@ app.post("/", async (req, res) => {
       },
     }
   );
-  res.json({ data: response.data });
+  // res.json({ data: response.data });
+  res.json({
+    image:
+      "https://github.com/zero-cola-masitda/my-llm-project/blob/step1/docs/assets/preview.jpg?raw=true",
+    desc: "정말 맛있는 음식입니다.",
+  });
 });
 
 app.listen(port, () => {
